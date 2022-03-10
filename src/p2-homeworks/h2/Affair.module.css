@@ -1,0 +1,15 @@
+.someClass {
+    margin: 10px;
+    padding: 3px;
+    border: 2px solid silver;
+    border-radius: 5px;
+    color: silver;
+    display: flex;
+    justify-content: space-between;
+}
+.btnDel {
+    border: 2px solid silver;
+    border-radius: 5px;
+    background: rgba(100, 100, 100, .5);
+    color: silver;
+}
