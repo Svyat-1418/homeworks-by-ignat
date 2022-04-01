@@ -1,7 +1,35 @@
-.checkbox {
+.checkbox{
+    //display: none;
+    appearance: none;
 
+    width: 20px;
+    height: 20px;
+    transition: .5s ease;
+    border: 2px solid #ff1143;
+    background: rgba(255, 17, 67, 0.4);
+    vertical-align: middle;
+    margin-right: 10px;
 }
-
-.spanClassName {
-
+.checkbox:checked{
+    appearance: none;
+    background-image: url("check.png");
 }
+.labelClassName {
+    //padding-left: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+/*
+.labelClassName::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    transition: .5s ease;
+    border: 2px solid #ff1143;
+    background: rgba(255, 17, 67, 0.4);
+    margin-left: -10px;
+    margin-right: 10px;
+    display: inline-block;
+
+}*/

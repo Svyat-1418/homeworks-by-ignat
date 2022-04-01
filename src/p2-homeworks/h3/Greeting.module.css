@@ -1,46 +1,15 @@
-.container {
-    margin: 0 auto;
-    width: 400px;
+.container{
+    width: 60%;
+    background: #000;
+    display: flex;
+    justify-content: space-around;
+}
+.addUser{
     display: flex;
 }
-.content {
-    //align-items: flex-end;
-}
-.addItem {
-    margin: 0 auto;
-    width: 300px;
-    display: flex;
-}
-.textField {
-    border: none;
-    background: linear-gradient(35deg, #7b0a0a, #a00505);
-    font-size: 1rem;
-    color: white;
-    padding: 0.5rem 2.5rem;
-    border-radius: 11px;
-    outline: none;
-}
-.btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    color: whitesmoke;
-    background: blue;
-}
-.countUsers {
-    padding: 15px 0;
-    color: #7b0a0a;
-    font-size: 50px;
+.countUsers{
+    margin-top: 50px;
     font-weight: bolder;
-}
-.error {
-    font-size: 20px;
-    font-weight: bolder;
-    background: #ff0f6a;
-    color: whitesmoke;
-    margin-top: 10px;
-    border: 1px solid red;
-    border-radius: 10px;
-    padding: 10px;
+    color: #ff1143;
+    font-size: 40px;
 }

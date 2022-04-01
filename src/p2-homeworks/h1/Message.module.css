@@ -1,7 +1,7 @@
 .container {
     display: flex;
     max-width: 200px;
-    background: #508dff;
+    background: #0b2c6a;
     border-radius: 5px;
     padding: 10px;
     margin: 10px 0;
@@ -11,11 +11,15 @@
 .imageAva {
     align-self: flex-end;
 }
-.nameAndMes {}
+.nameAndMes {
+    color: whitesmoke;
+    padding: 0 10px;
+}
 .contentBlock {
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    background: #00ff25;
+    background: #3f3063;
     position: relative;
 }
 .contentBlock::after {
@@ -27,7 +31,7 @@
     display: block;
     height: 10px;
     width: 10px;
-    right: 106px;
+    right: 139px;
     /* z-index: -1; */
     background: inherit;
     clip-path: url(#svgPath);

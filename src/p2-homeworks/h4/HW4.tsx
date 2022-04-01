@@ -6,7 +6,7 @@ import SuperCheckbox from './common/c3-SuperCheckbox/SuperCheckbox'
 
 function HW4() {
     const [text, setText] = useState<string>('')
-    const error = text ? '' : 'error'
+    const error = text ? '' : 'Error'
 
     const showAlert = () => {
         if (error) {
@@ -30,7 +30,8 @@ function HW4() {
                     onChangeText={setText}
                     onEnter={showAlert}
                     error={error}
-                    // spanClassName={s.testSpanError}
+                    className={s.blue}
+                    spanClassName={s.testSpanError}
                 />
 
                 <SuperInputText

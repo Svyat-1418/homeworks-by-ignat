@@ -9,7 +9,7 @@ type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElem
 type SuperInputTextPropsType = DefaultInputPropsType & { // и + ещё пропсы которых нет в стандартном инпуте
     onChangeText?: (value: string) => void
     onEnter?: () => void
-    error?: string
+    error?: string | null
     spanClassName?: string
 }
 
@@ -38,21 +38,30 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
         && onEnter() // то вызвать его
     }
 
-    const finalSpanClassName = `${s.error} ${spanClassName ? spanClassName : ''}`
-    const finalInputClassName = `${s.errorInput} ${className}` // need to fix with (?:) and s.superInput
+    const finalSpanClassName = `${s.error} ${spanClassName ? spanClassName : ''} ${s.text}`
+    const finalInputClassName = `${error ? s.errorInput : s.superInput} ${className}` // need to fix with (?:) and s.superInput
 
     return (
-        <>
-            <input
-                type={'text'}
-                onChange={onChangeCallback}
-                onKeyPress={onKeyPressCallback}
-                className={finalInputClassName}
+        <div className={s.container}>
+            <div className={s.row100}>
+                <div className={s.col}>
+                    <div className={s.inputBox}>
+                        <input
+                            required
+                            type={'text'}
+                            onChange={onChangeCallback}
+                            onKeyPress={onKeyPressCallback}
+                            className={finalInputClassName}
 
-                {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
-            />
-            {error && <span className={finalSpanClassName}>{error}</span>}
-        </>
+                            {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
+                        />
+                        {error ? <span className={finalSpanClassName}>{error}</span> :
+                            <span className={s.text}>Type your text Here...</span>}
+                        <span className={s.line}> </span>
+                    </div>
+                </div>
+            </div>
+        </div>
     )
 }
 
