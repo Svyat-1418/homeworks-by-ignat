@@ -11,3 +11,77 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+
+#app { height: 100% }
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+
+    background-image: url("https://kartinkin.net/uploads/posts/2021-07/1625662836_20-kartinkin-com-p-vedmak-oboi-krasivie-24.jpg") ;
+    /*background: url("../src/p1-main/m1-ui/u1-app/preview.jpg") center center / cover no-repeat ;*/
+    /*background-repeat: no-repeat;*/
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+/*.banner {
+    !*background-color: rgb(185 28 28 / var(--tw-bg-opacity));*!
+    background: linear-gradient(to top, #000000, #171717);
+}*/
+
+.swiper {
+    width: 100%;
+    //z-index: 10;
+    height: 100vh;
+}
+
+.swiper-slide {
+    font-size: 20px;
+    color: #a199ff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 60px;
+}
+
+.parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.swiper-slide .title {
+    font-size: 41px;
+    font-weight: 300;
+}
+
+.swiper-slide .subtitle {
+    font-size: 21px;
+}
+
+.swiper-slide .text {
+    font-size: 14px;
+    max-width: 400px;
+    line-height: 1.3;
+}
