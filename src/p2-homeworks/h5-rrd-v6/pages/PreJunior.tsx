@@ -12,6 +12,7 @@ import "swiper/css/navigation";
 
 import {Title} from "../../../p1-main/m1-ui/u1-app/Title";
 import {Subtitle} from "../../../p1-main/m1-ui/u1-app/Subtitle";
+import HW6 from "../../h6/HW6";
 
 export function PreJunior() {
     return (
@@ -55,9 +56,13 @@ export function PreJunior() {
                     <Subtitle subtitle={"Super Components"}/>
                     <HW4/>
                 </SwiperSlide>
-            </Swiper>
 
-            {/*<HW6/>*/}
+                <SwiperSlide>
+                    <Title title={"HW6"}/>
+                    <Subtitle subtitle={"Super EditableSpan"}/>
+                    <HW6/>
+                </SwiperSlide>
+            </Swiper>
 
         </div>
     )
