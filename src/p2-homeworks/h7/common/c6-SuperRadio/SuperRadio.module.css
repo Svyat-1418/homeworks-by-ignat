@@ -1,0 +1,12 @@
+.radio{
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 5px;
+    border: 2px solid #7b0a0a;
+}
+.radio:checked{
+    background: #7b0a0a;
+
+
+}
