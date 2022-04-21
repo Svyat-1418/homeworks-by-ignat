@@ -1,0 +1,22 @@
+.peopleWrap{
+    width: 600px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #7b0a0a;
+}
+.person{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #007aff;
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+    font-style: italic;
+}
+.btnWrap{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+
+}
