@@ -1,0 +1,9 @@
+.container{
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.btnWrap{
+    display: flex;
+}
