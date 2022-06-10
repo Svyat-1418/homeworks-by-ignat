@@ -7,9 +7,11 @@ import "swiper/css/navigation";
 
 import {Title} from "../../../p1-main/m1-ui/u1-app/Title";
 import {Subtitle} from "../../../p1-main/m1-ui/u1-app/Subtitle";
+
 import HW7 from '../../h7/HW7';
 import HW8 from "../../h8/HW8";
 import HW9 from "../../h9/HW9";
+import HW10 from "../../h10/HW10";
 
 export function Junior() {
     return (
@@ -46,6 +48,12 @@ export function Junior() {
                     <Title title={"HW9"}/>
                     <Subtitle subtitle={"Clock"}/>
                     <HW9/>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <Title title={"HW10"}/>
+                    <Subtitle subtitle={"Loading"}/>
+                    <HW10 />
                 </SwiperSlide>
             </Swiper>
 

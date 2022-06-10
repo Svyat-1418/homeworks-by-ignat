@@ -23,7 +23,7 @@ function HW8() {
 
     // need to fix any
     const finalPeople = people.map((p: UserType) => (
-        <div className={s.peopleWrap}>
+        <div key={p._id} className={s.peopleWrap}>
             <div className={s.person} key={p._id}>
                 Name: <span> {p.name}</span>
                 Age: <span> {p.age}</span>
