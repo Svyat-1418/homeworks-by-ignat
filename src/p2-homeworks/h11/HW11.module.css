@@ -1,0 +1,11 @@
+.singleRange{
+    width: 200px;
+}
+.doubleRangeWrap{
+    width: 200px;
+}
+.doubleRangeValuesWrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}

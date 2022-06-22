@@ -12,6 +12,7 @@ import HW7 from '../../h7/HW7';
 import HW8 from "../../h8/HW8";
 import HW9 from "../../h9/HW9";
 import HW10 from "../../h10/HW10";
+import HW11 from "../../h11/HW11";
 
 export function Junior() {
     return (
@@ -55,11 +56,13 @@ export function Junior() {
                     <Subtitle subtitle={"Loading"}/>
                     <HW10 />
                 </SwiperSlide>
-            </Swiper>
 
-            {/*<HW9/>*/}
-            {/*<HW10/>*/}
-            {/*<HW11/>*/}
+                <SwiperSlide>
+                    <Title title={"HW11"}/>
+                    <Subtitle subtitle={"SuperRange"}/>
+                    <HW11 />
+                </SwiperSlide>
+            </Swiper>
 
         </div>
     )
